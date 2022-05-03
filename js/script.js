@@ -8,25 +8,42 @@
 
 
 /**
- * This function displays an answer based on the temperature entered by the user
+ * This function displays what type of movie the user can see depending on the age given by the user
  */
 function displayAnswer () {
   
   	// initialize variables (answer)
 	let answer = ""
 	
-	// get user input (temperature)
-	let temperature = parseInt(document.getElementById('temperature').value)
+	// get user input (age)
+	let age = parseInt(document.getElementById('age').value)
 
 
-  	// if temperature is less than 15, display "It's cold outside." Otherwise display "It's hot outside."
-	if (temperature<15) {
-		answer = "It's cold outside."
-	} 
-  else {
-    answer = "It's hot outside."
+   // determine the answer based on the users age
+
+    if (age > 17) {
+
+        answer = "You can see an R rated movie alone."
+
+    }
+
+    else if (age > 13) {
+
+        answer = "You can see a PG-13 rated movie alone.)"
 
     }  
+
+	else if (age > 9) {
+
+        answer = "You can see a G or PG rated movie alone."
+    }
+
+  else {
+
+        greeting = "Please enter a valid age."
+
+    }
+
 
   // display the results 
   document.getElementById('answer').innerHTML = answer
