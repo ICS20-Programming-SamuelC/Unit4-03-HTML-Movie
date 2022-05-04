@@ -40,11 +40,12 @@ function displayAnswer () {
 
   else {
 
-        greeting = "Please enter a valid age."
+        answer = "You can't watch a movie alone."
 
     }
 
 
   // display the results 
   document.getElementById('answer').innerHTML = answer
+
 }
