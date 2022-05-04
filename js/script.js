@@ -29,7 +29,7 @@ function displayAnswer () {
 
     else if (age > 13) {
 
-        answer = "You can see a PG-13 rated movie alone.)"
+        answer = "You can see a PG-13 rated movie alone."
 
     }  
 
